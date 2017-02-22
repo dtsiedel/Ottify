@@ -1,0 +1,7 @@
+cmake .
+make
+./CoverFace $1
+out=$1
+out=${out/.*}
+#/Applications/VLC.app/Contents/MacOS/VLC $1 outputs/$out.ott.jpg
+open $1 outputs/$out.ott.jpg
