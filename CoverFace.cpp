@@ -111,7 +111,7 @@ void pasteFace(Mat input_image, Mat replace_face, int face_x, int face_y, int fa
         {
             Vec3b color = replace_face.at<Vec3b>(Point(i,j));
             // if(color.val[0]!=255 && color.val[1]!=255 && color.val[2]!=255)
-            if(closeToWhite(color.val[0])&&closeToWhite(color.val[1])&&closeToWhite(color.val[2]))
+            if(notCloseToWhite(color.val[0])&&notCloseToWhite(color.val[1])&&notCloseToWhite(color.val[2]))
             {
                 input_image.at<Vec3b>(Point(i+face_x-face_width/2, j+face_y-face_height/2)) = color;
             }
@@ -120,7 +120,7 @@ void pasteFace(Mat input_image, Mat replace_face, int face_x, int face_y, int fa
 }
 
 //check if color is close to white, within a threshold
-bool closeToWhite(int x)
+bool notCloseToWhite(int x)
 {
     int thresh = 4;
     if(abs(x - 255) >= thresh)

@@ -1,5 +1,5 @@
-cmake .
-make
+#cmake .
+#make
 ./CoverFace $1
 out=$1
 out=${out/.*}
