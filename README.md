@@ -4,7 +4,7 @@ Usage: ./ottify <image>
 
 ![alt tag](https://github.com/dtsiedel/Ottify/blob/master/outputs/randos.ott.jpg)
 
-Future work if I feel like it (probably not):
+Future work if I feel like it (probably not):  
 i.   Fix face image (leftover background, slightly too high)  
 ii.  Add ability to use other faces (face parameter)  
 iii. Add lookup of images by wikipedia/google search etc.  
