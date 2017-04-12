@@ -1,0 +1,3 @@
+/Users/drewsiedel/Documents/OpenCV/CoverFace/CMakeFiles/rebuild_cache.dir
+/Users/drewsiedel/Documents/OpenCV/CoverFace/CMakeFiles/edit_cache.dir
+/Users/drewsiedel/Documents/OpenCV/CoverFace/CMakeFiles/CoverFace.dir

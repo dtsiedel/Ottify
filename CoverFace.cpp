@@ -10,7 +10,7 @@
 using namespace std;
 using namespace cv;
 
-//TODO: rotate face to fit
+//TODO: rotate Jott face to fit target
 
 void pasteFace(Mat input_image, Mat replace_face, int face_x, int face_y, int face_height, int face_width);
 bool closeToWhite(int x);
@@ -101,9 +101,6 @@ void pasteFace(Mat input_image, Mat replace_face, int face_x, int face_y, int fa
     int place_x = face_x - (face_height/2);
     int place_y = face_y - (face_width/2);
 
-    // cerr << "Face location: " << face_x << ", " << face_y << endl;
-    // cerr << "Face size: " << face_height << ", " << face_width << endl;
-    // cerr << "Final location: " << place_x << ", " << place_y << endl;
 
     for(int i = 0; i < face_width; i++)
     {
